@@ -26,19 +26,12 @@ $tipoDeSangue = $_GET["apelido"];
 
 if (isset($_GET["submit"]) ) {
 
+    $Inserir = $conexao->prepare("INSERT INTO dadores(nome,apelido,email,genero,telefone,endereco,altura,peso) VALUES ('$nome','$apelido','$email','$sexo','$telefone',
+   '$endereco','$altura','$peso') ");
+    $Inserir->execute();
+   $query = $conexao->query("SELECT *FROM dadores");
 
-
-$apagar = $conexao->prepare("DELETE *FROM dadores where apelido = 'Abu'");
-$apagar->execute();
-   $Inserir = $conexao->prepare("INSERT INTO dadores(nome,apelido,email,genero,telefone,endereco,altura,peso) VALUES ('$nome','$apelido','$email','$sexo','$telefone',
-  '$endereco','$altura','$peso') ");
-  $Inserir->execute();
-
-
-
-  $query = $conexao->query("SELECT *FROM dadores");
-
-
+// paulo is awesome
   while ($r = $query->fetch()) {
   echo $r['apelido'] ,'<br>' ;
 
