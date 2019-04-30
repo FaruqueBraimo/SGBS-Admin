@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.registro_Dador{
+    background-image: -webkit-linear-gradient(135deg,#C0392B 30%,#C0602B 90%);
+    background-image: linear-gradient(135deg,#C0392B 30%,#C0602B 90%);
+    position: relative;
+    padding: 5%;
+    display: grid;
+    height: 79.3vh;
+    
+}
+.registro_Dador *{
+ box-sizing: border-box;   
+}
+ 
+.registro_Dador form input{
+display: inline-block;
+width: 30%;
+padding: 0 20px;
+height: 5vh;
+background-color: white;
+border: solid 1px #e6e6e6;
+border-bottom-width: 3px;
+border-radius: 5px;
+-webkit-transition: all 7777s ease;
+transition: all 7777s ease;
+outline: none;
+height: 50px;
+
+
+}
+.a{
+    display: inline-block;
+width: 30%;
+padding: 0 20px;
+height: 5vh;
+background-color: white;
+border: solid 1px #e6e6e6;
+border-bottom-width: 3px;
+border-radius: 5px;
+-webkit-transition: all 7777s ease;
+transition: all 7777s ease;
+outline: none;
+cursor: pointer;
+height: 50px;
+
+}
+
+.registro_Dador form input:not(:last-child){
+    margin-bottom: 2%;
+}
+
+.registro_Dador form input:not(:last-child){
+    margin-left: 2%;
+}
+ 
+.a:not(:last-child){
+    margin-bottom: 2%;
+}
+
+.a:not(:last-child){
+    margin-left: 2%;
+}
+ 
+
+
+
+.registro_Dador form input[type ="text"]:focus,
+.registro_Dador form input[type ="text"]:active{
+
+    border-color: #ccc;
+}
+
+
+.reg_info{
+    font-size: 2rem;
+    padding-bottom: 0 0 20px;
+    padding-bottom:  5px;
+    margin: 0 0 20px;
+    border-bottom: dashed 1px #e6e6e6;
+    margin-right: 35px;
+    margin-left: 10px;
+
+
+}
+
+.container{
+width: 100%;
+background-color: white;
+margin: 0 auto;
+ display: block;
+  position: relative;
+  padding: 5%;
+  box-shadow: 0 0 50px  rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+
+.registro_Dador form input[type ="submit"]{
+    background-image: -webkit-linear-gradient(135deg,#C0392B 30%,#C0602B 90%);
+    background-image: linear-gradient(135deg,#C0392B 30%,#C0602B 90%);
+    position: relative;
+    color: white;
+    padding: 0  20px;
+    background-size: 100%;
+    display: inline-block;
+    font-size: 1rem;
+    color: aliceblue;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    line-height: 0.5em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    display: grid-inline;
+    border : solid 1px #C0602B;
+    border-bottom-width: 3px;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    box-shadow:   0 1px 1px 1px #C0392B;;
+    border: solid 1px  #C0392B;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin-top: 2%;
+    margin-left: 34%;
+    cursor: pointer;    
+      
+
+
+
+}
+.registro_Dador form input[type ="submit"]:hover{
+
+    background-size: 40px 40px;
+}
+
+
+p{
+    color: #C0392B;
+}
