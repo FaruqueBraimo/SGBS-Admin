@@ -15,6 +15,8 @@ private $cod_doacao;
 private $data_doacao;
 private $qtdSangue;
 private $cod_dador;
+private $observacao;
+
 
 
 

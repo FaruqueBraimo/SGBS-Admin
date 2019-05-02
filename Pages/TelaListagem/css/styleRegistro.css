@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.registro_Dador{
+    background-image: -webkit-linear-gradient(135deg,#C0392B 30%,#C0602B 90%);
+    background-image: linear-gradient(135deg,#C0392B 30%,#C0602B 90%);
+    position: relative;
+    padding: 5%;
+    display: grid;
+    height: 79.3vh;
+
+}
+.registro_Dador *{
+ box-sizing: border-box;
+}
+
+
+
+.reg_info{
+    font-size: 2rem;
+    border-bottom: dashed 1px #e6e6e6;
+    padding-bottom: 5px;
+
+
+}
+
+.container{
+  width: 100%;
+  background-color: white;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  padding: 2%;
+  box-shadow: 0 0 50px  rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+
+#pes{
+  display: inline-block;
+  width: 25%;
+  padding: 0 20px;
+  height: 5vh;
+  background-color: white;
+  border: solid 1px #e6e6e6;
+  border-bottom-width: 3px;
+
+  
+
+}
+
+
+#sub{
+width: 5%;
+background-color: #61A3BF;
+border: none;
+outline: none;
+height: 5vh;
+color: white;
+font-size: 16px;
+margin-left: -8px;
+
+
+}

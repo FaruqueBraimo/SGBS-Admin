@@ -20,15 +20,6 @@ private $status;
 
 
 
-
-
-
-
-
-
-
-
-
   function __construct(argument)
   {
     // code...

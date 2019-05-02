@@ -1,0 +1,15 @@
+{
+    "name": "faruque/ajax",
+    "authors": [
+        {
+            "name": "FaruqueBraimo",
+            "email": "42444957+FaruqueBraimo@users.noreply.github.com"
+        }
+    ],
+    "autoloud": {
+
+        "psr-4":{
+            "SGBS-ADMIN\\": "SGBS-ADMIN"
+        }
+    }
+}
