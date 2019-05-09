@@ -1,17 +1,10 @@
 <?php
 
-require_once  'Exemplo.php';
+require_once  'ExemploSangue.php';
 
 $exemplo = new Exemplo("sgbs","localhost","root", "");
 
 
-try {
-  $conexao = new  PDO("mysql:host = localhost;dbname=sgbs", "root","");
-
-} catch (PDOException $e) {
-  echo  $e->getMessage();
-
-}
 
 
 
@@ -28,9 +21,6 @@ try {
 <link rel="icon" type="imagem/png" href="resources/foto-3.png" />
 <link rel="stylesheet" type="text/css" href="css/styleRegistro.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
- <script src ="js/script.js"> </script>
-
  <meta  name="Author" content="Faruque">
 
  </head>
@@ -54,7 +44,7 @@ try {
         <span style="font-size: 2rem; text-align:center" ; >
           <span style="color: white;">
             <i class="fas fa-user"></i>
-            Doadores
+            Sangue
           </span>
 
           </div>
@@ -76,7 +66,7 @@ try {
 
 
 
-<a  class="a"   href="../TelaRegisto/telaDador.php">
+<a  class="aPlus"   href="../TelaRegisto/telaSangue.php">
 
   <span style="font-size: 1rem; text-align:center" ; >
     <span style="color: white;">
@@ -111,40 +101,9 @@ try {
     <thead>
 
 
-          <tr>
-
 
             <th>
-            Nome
-
-            </th>
-
-
-            <th>
-             Data Nasc
-            </th>
-
-
-
-
-
-            <th>
-              Gênero
-
-
-            </th>
-
-
-            <th>
-              Grupo Sanguineo
-
-
-            </th>
-
-
-
-            <th>
-                Endereço
+                codigo
 
 
             </th>
@@ -153,24 +112,29 @@ try {
 
 
             <th>
-  Telefone
+  tipo
             </th>
 
 
             <th>
-    Email
+    quantidade disponivel
             </th>
 
             <th>
-    peso
+    prazo de validade
             </th>
 
 
 
 
-            <th>
-      Accao
-            </th>
+
+                        <th>
+                  descricao
+                        </th>
+
+                        <th>
+                  Accao
+                        </th>
 
 
 
@@ -179,29 +143,6 @@ try {
 
 <tbody>
   <?php
-
-
-  $nome    = $_GET['nome'];
-  $apelido = $_GET["apelido"];
-  $email =  $_GET["email"];
-  $sexo =  $_GET["sexo"];
-  $telefone = $_GET["telefone"];
-  $endereco = $_GET["endereco"];
-  $peso =    $_GET["peso"];
-  $altura =   $_GET["altura"];
-  $tipoDeSangue = $_GET["apelido"];
-
-  if (isset($_GET["sub"]) ) {
-
-      $Inserir = $conexao->prepare("INSERT INTO dadores(nome,apelido,email,genero,telefone,endereco,altura,peso) VALUES ('$nome','$apelido','$email','$sexo','$telefone',
-     '$endereco','$altura','$peso') ");
-      $Inserir->execute();
-
-  }
-
-
-
-
 
 
   $dados =  $exemplo ->listarDadores();
@@ -223,7 +164,31 @@ try {
   }
 
 ?>
-<td>     <a class="ac" href = "#"> Editar </a>    <a href = "#" class="ab" id="Excluir" > Excluir </a>  </td>
+<td>
+
+    <a class="" href = "#">
+      <span style="font-size: 1.7rem; text-align:center" ; >
+        <span style="color: #001f3f;">
+         <i class="far fa-edit"></i>
+        </span>
+
+
+       </a>
+
+
+
+        <a href = "#" class="" id="Excluir" >
+
+          <span style="font-size: 1.7rem; text-align:center" ; >
+            <span style="color: #FF4136;">
+             <i class="far fa-trash-alt"></i>
+            </span>
+
+
+        </a>
+
+
+    </td>
 <?php
    echo "</tr>";
 

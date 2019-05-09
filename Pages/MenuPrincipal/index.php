@@ -85,9 +85,9 @@
                         <p class="navTit">Cadastros</p>
 
                                 <a  id="navDador" class="links" href="../TelaListagem/listagenDador.php">Doador<BR>
-                                <a   id="doacoesID" class="links" href=""> Doação </a>
-                                <a  id="sangueID" class="links" href=""> Sangue </a>
-                                <a   id="uuarioID" class="links" href=""> Usuário </a><br>
+                                <a   id="doacoesID" class="links"  href="../TelaListagem/listagemDoacao.php"> Doação </a>
+                                <a  id="sangueID" class="links"  href="../TelaListagem/listagemSangue.php"> Sangue </a>
+                                <a   id="uuarioID" class="links"  href="../TelaListagem/listagemUsuario.php"> Usuário </a><br>
 
                                 <a class="" href="">  </a><BR>
                                 <p class="navTit">Notificações</p><br>
@@ -120,7 +120,7 @@
                                 <div id="bx2">
 
                                                                     <span style="font-size: 3rem; text-align:center">
-                                                                      <span style="color: Mediumslateblue;">
+                                                                      <span style="color: #39CCCC;">
                                                                       <i class="far fa-calendar-check"></i>
                                                                       </span>
                                                                     </span>
@@ -136,7 +136,7 @@
                                 </div>
                                 <div id="bx3"  >
                                   <span style="font-size: 3rem; text-align:center">
-                                    <span style="color: Mediumslateblue;">
+                                    <span style="color: #001f3f;">
                                   <i class="fas fa-user-check"></i>
                                     </span>
                                   </span>
@@ -146,7 +146,7 @@
                                 <div id="bx4">
 
                                     <span style="font-size: 3rem; text-align:center">
-                                      <span style="color: Mediumslateblue;">
+                                      <span style="color: #0074D9;">
                                         <i class="fas fa-user-minus"></i>                                      </span>
                                     </span>
 
@@ -154,7 +154,7 @@
                                   <br>Doadores que faltaram</div>
                                 <div id="bx5">
                                   <span style="font-size: 3rem; text-align:center">
-                                    <span style="color: Mediumslateblue;">
+                                    <span style="color: #C0602B;">
                                       <i class="fas fa-user-times"></i>
                                     </span>
                                   </span>
@@ -162,7 +162,7 @@
                                 <div id="bx6">
 
                                   <span style="font-size: 3rem; text-align:center">
-                                    <span style="color: Mediumslateblue;">
+                                    <span style="color: #A42153;">
                                     <i class="far fa-calendar-times"></i>
                                     </span>
                                   </span>

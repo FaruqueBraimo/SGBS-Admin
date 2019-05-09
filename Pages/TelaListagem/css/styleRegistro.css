@@ -146,12 +146,12 @@ color: white;
 
 }
 
-.a{
+.aPlus{
   background-color: #C0392B;
   border-radius: 50%;
-  padding: 20px 22px;
+  padding: 20px 20px;
   color: white;
-  margin-left: 50%;
+  margin-left: 54%;
 }
 
 td{
@@ -168,8 +168,11 @@ font-size: 1em;
 
 }
 
+a{
+  text-decoration: none;
+  letter-spacing: 5px;
 
-
+}
  .filtros form input[type ="submit"]{
    width: 5%;
 
