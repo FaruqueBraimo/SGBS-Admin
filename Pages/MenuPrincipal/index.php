@@ -23,7 +23,6 @@
 <script type="text/javascript">
         google.charts.load('current', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawChart);
-
         function drawChart() {
           var data = google.visualization.arrayToDataTable([
             ['MONTH', 'Mulheres', 'Homens'],
@@ -38,28 +37,13 @@
             ['OCT',  50,      30],
             ['NOV',  20,      260],
             ['DEC',  30,      10],
-
-
-
-
-
-
-
-
-
-
           ]);
-
           var options = {
             curveType: 'function',
             title: 'AGENDAMENTOS POR MÊS',
             legend: { position: 'bottom' }
           };
-
-
-
           var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
           chart.draw(data, options);
         }
       </script>
@@ -100,7 +84,7 @@
 
                         <p class="navTit">Cadastros</p>
 
-                                <a  id="navDador" class="links" href="../TelaRegisto/tela.html">Doador<BR>
+                                <a  id="navDador" class="links" href="../TelaListagem/listagenDador.php">Doador<BR>
                                 <a   id="doacoesID" class="links" href=""> Doação </a>
                                 <a  id="sangueID" class="links" href=""> Sangue </a>
                                 <a   id="uuarioID" class="links" href=""> Usuário </a><br>
@@ -116,8 +100,6 @@
 
 
                 </div>
-                </di
-
 
 
 

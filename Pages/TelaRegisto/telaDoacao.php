@@ -21,25 +21,36 @@
 
     <div class="container">
             <div class="reg_info">
-                    <p>Registo de Doação</p>
+                    <p>Registo do Dador</p>
                 </div>
                 <div class="Formulario">
 
-                    <form action="listagem.php" method="get">
-
+                    <form action="../TelaListagem/listagenDador.php" method="get">
+                        <label for="Nome_id"Nome></label>
+                            <input type="text" name="nome" id="Nome_id" placeholder="Nome" >
+                            <input type="text"  name="apelido" id="Nome_id" placeholder="Apelido" >
+                            <input type="tel"  name="telefone" id="Nome_id" placeholder="Telefone" >
+                            <input type="email" name="email" id="Nome_id" placeholder="Email" >
+                            <input type ="text" name="endereco" id="Nome_id" placeholder="Endereço" >
                             <select class="a" name="sexo">
-                              <Option>Doador</Option>
-                                <Option>Faruque</Option>
-                                <Option>Jose</Option>
+                                <Option>Sexo</Option>
+                                <Option>Feminino</Option>
+                                <Option>Masculino</Option>
                             </select>
-                            <input type="text" name="qtd" id="Nome_id" placeholder="Quantidade de Sangue">
-                            <input type="text" name="qtd" id="Nome_id" placeholder="Outro">
+                            <select class="a">
+                                    <Option>Grupo de Sangue</Option>
 
-                           <label class="c"> Observacao</label>
-                            <textarea class="b" name="desc" placeholder="observacao">
+                                </select>
 
-                            </textarea>
-                            <input type="submit" name="submit" value="Registar" id="btOk" >
+
+
+                            <input type="text" name="peso" id="Nome_id" placeholder="Peso">
+                            <input type="text" name="altura" id="Nome_id" placeholder="Altura">
+                            <input type="text" name="" id="Nome_id" placeholder="Nome">
+                            <input type="text" name="" id="Nome_id" placeholder="Nome">
+                            <input type="text" name="" id="Nome_id" placeholder="Nome">
+
+                            <input type="submit" name="sub" value="Registar" id="btOk" >
 
                     </form>
 
